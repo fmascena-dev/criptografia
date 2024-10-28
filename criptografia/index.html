@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Criptografia de texto</title>
+  </head>
+  <body>
+    <header>
+      <section class="titulo">
+        <h1>Criptografia de Textos</h1>
+      </section>
+    </header>
+    <main>
+      <section class="container">
+        <textarea
+          id="inputText"
+          placeholder="DIGITE SEU TEXTO AQUI..."
+        ></textarea>
+        <div class="buttons">
+          <button class="encrypt" onclick="encryptText()">Criptografar</button>
+          <button class="dencrypt" onclick="decryptText()">
+            Descriptografar
+          </button>
+        </div>
+        <textarea id="outputText" readonly onclick="copyText()"></textarea>
+        <div class="buttons">
+          <button class="copy" onclick="copyText()">Copiar</button>
+          <button class="clear" onclick="clearText()">Limpar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/felipe-mascena">Felipe Mascena</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
